@@ -12,11 +12,11 @@ def getPlayerPosition(play_board):
                 print("La position du joueur est donc la suivante:")
                 return(position_x,position_y)
 
-print(getPlayerPosition(play_board))
+#print(getPlayerPosition(play_board))
 
 
 
-def isEmpty(play_board, x, y):
+def isEmpty(x, y):
     if play_board[y][x] == "-":
         return True 
     elif play_board[y][x] == "#":
@@ -24,6 +24,16 @@ def isEmpty(play_board, x, y):
     else:
         return False 
     
-print(isEmpty(play_board, 5, 0))
-print(isEmpty(play_board, 5, 2))
+#print(isEmpty(5, 0))
+#print(isEmpty(5, 2))
 
+
+
+def isBox(x,y):
+    if play_board[y][x] == "$" or play_board[y][x] == "*" :
+        return True 
+    else:
+        return False 
+
+#print(isBox(5, 0))
+#print(isBox(5, 2))
