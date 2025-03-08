@@ -1,5 +1,5 @@
 play_board = open("level1.txt", "r").read().strip().splitlines()
-print(play_board)
+#print(play_board)
 
 
 
@@ -37,3 +37,12 @@ def isBox(x,y):
 
 #print(isBox(5, 0))
 #print(isBox(5, 2))
+
+
+
+def printBoard(play_board):
+    for i in range(len(play_board)):
+        print(play_board[i])
+        print()  # passe a la ligne suviante 
+
+#printBoard(play_board)
